@@ -1,35 +1,27 @@
 #include "tipos.h"
-
-int main()
-{
-	
-	Lvoo Q;
-     inicializarvoo(&Q);
+int main (){
 	TLista L;
+	inicializar(&L);
 	int opc;
-	 inicializar(&L);
-	
-
 	do{
-	printf("ALOOOO CACETECH:\n");
-	printf("1-Inserir passageiro\n");
-	printf("2-Apresentar lista de passageiros\n");
-	printf("3-Criar voo\n");
-	printf("4-Apresentar voo\n");
-	printf("0-Sair\n");
-	printf("\nEscolha uma opcao\n");
-	scanf("%d",&opc);
-	
-		
-	switch (opc)
-	{
-		case 1: inserir(&L, &Q); break;
-		case 2: apresentar(&L); break;
-		case 3: voo(&Q);break;
-		case 4: apresentarvoo(&Q, &L);
-		case 0: break;	
-	}
-	
-	system("cls");
-	}while(opc!=0);
+		printf("\n 1 - Reserva de bilhete");
+		printf("\n 2 - Cancelamento de bilhete");
+		printf("\n 3 - Pesquisar bilhete");
+		printf("\n 4 - relatorio de voos");
+		printf("\n 5 - Lista de passageiros");
+		printf("\n 6 - Inserir voo");
+		printf("\n 0 - Sair");
+		printf("\n Escolha uma opcao: ");
+		scanf("%d",&opc);
+		switch (opc)
+		{
+			case 1:reservarBilhete(&L);break;
+			case 2:break;
+			case 3:break;
+			case 4:break;
+			case 5:break;
+			case 6:break;
+			case 0:break;
+		}		
+	}while(opc != 0);
 }

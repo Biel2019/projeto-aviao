@@ -1,0 +1,7 @@
+#include "tipos.h"
+void reservarBilhete(TLista*p){
+	Tpass * novo;
+	novo = (Tpass*) malloc(sizeof(Tpass));
+	Printf("\n Qual o nome do passageiro:");
+	scanf("%c",&novo->nome);
+}
